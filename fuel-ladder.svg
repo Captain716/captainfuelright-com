@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="ladder-title ladder-desc" font-family="Inter, Arial, sans-serif">
+  <title id="ladder-title">Captain Fuel Right efficacy across the crude oil fractional distillation ladder</title>
+  <desc id="ladder-desc">The ladder of petroleum fractions from LPG at the top to Residue at the bottom, annotated with the fuels Captain Fuel Right treats and a note that efficacy improves up the ladder from residual to distillate to unleaded.</desc>
+
+  <!-- Background -->
+  <rect width="900" height="720" fill="#f5f7fa"/>
+
+  <!-- Title -->
+  <text x="450" y="42" font-size="26" font-weight="800" fill="#061a33" text-anchor="middle" letter-spacing="-0.5">FUEL RIGHT WORKS ACROSS THE ENTIRE FUEL LADDER</text>
+  <text x="450" y="70" font-size="14" font-weight="500" fill="#4a5568" text-anchor="middle" letter-spacing="1">CRUDE OIL FRACTIONAL DISTILLATION &middot; EFFICACY IMPROVES UP THE LADDER</text>
+
+  <!-- Tower -->
+  <rect x="220" y="100" width="260" height="560" rx="4" fill="#e2e8f0" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Fractions (top to bottom) -->
+  <!-- LPG -->
+  <rect x="222" y="102" width="256" height="70" fill="#f0f9ff"/>
+  <text x="350" y="132" font-size="18" font-weight="700" fill="#061a33" text-anchor="middle">LPG</text>
+  <text x="350" y="152" font-size="11" fill="#4a5568" text-anchor="middle">&lt; 40&deg;C &middot; Cooking, fuel gas</text>
+
+  <!-- Naphtha -->
+  <rect x="222" y="172" width="256" height="70" fill="#fef3c7"/>
+  <text x="350" y="202" font-size="18" font-weight="700" fill="#061a33" text-anchor="middle">NAPHTHA</text>
+  <text x="350" y="222" font-size="11" fill="#4a5568" text-anchor="middle">70&ndash;100&deg;C &middot; Petrochemicals</text>
+
+  <!-- Gasoline -->
+  <rect x="222" y="242" width="256" height="70" fill="#fde68a"/>
+  <text x="350" y="272" font-size="18" font-weight="700" fill="#061a33" text-anchor="middle">GASOLINE &middot; UNLEADED</text>
+  <text x="350" y="292" font-size="11" fill="#4a5568" text-anchor="middle">40&ndash;150&deg;C &middot; Cars, motorcycles</text>
+
+  <!-- Kerosene -->
+  <rect x="222" y="312" width="256" height="70" fill="#fcd34d"/>
+  <text x="350" y="342" font-size="18" font-weight="700" fill="#061a33" text-anchor="middle">KEROSENE</text>
+  <text x="350" y="362" font-size="11" fill="#4a5568" text-anchor="middle">150&ndash;250&deg;C &middot; Jet fuel, heating</text>
+
+  <!-- Diesel -->
+  <rect x="222" y="382" width="256" height="70" fill="#f59e0b"/>
+  <text x="350" y="412" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">DIESEL &middot; ULSD</text>
+  <text x="350" y="430" font-size="11" fill="#ffffff" text-anchor="middle">250&ndash;350&deg;C &middot; Trucks, generators, marine</text>
+
+  <!-- Heavy Gas Oil -->
+  <rect x="222" y="452" width="256" height="70" fill="#b45309"/>
+  <text x="350" y="482" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">HEAVY GAS OIL &middot; MGO</text>
+  <text x="350" y="500" font-size="11" fill="#ffffff" text-anchor="middle">350&ndash;450&deg;C &middot; IFO, bunker blends</text>
+
+  <!-- Residue -->
+  <rect x="222" y="522" width="256" height="70" fill="#422006"/>
+  <text x="350" y="550" font-size="18" font-weight="700" fill="#d69e2e" text-anchor="middle">RESIDUE &middot; VLSFO / HFO</text>
+  <text x="350" y="568" font-size="11" fill="#cbd5e0" text-anchor="middle">&gt; 450&deg;C &middot; Ships, industrial fuel</text>
+
+  <!-- Furnace -->
+  <rect x="222" y="592" width="256" height="66" fill="#1a202c"/>
+  <text x="350" y="624" font-size="14" font-weight="700" fill="#d69e2e" text-anchor="middle">FURNACE &middot; ROAD &amp; ASPHALT</text>
+  <text x="350" y="642" font-size="10" fill="#a0aec0" text-anchor="middle">Bitumen &middot; Road base</text>
+
+  <!-- Cooler arrow (left) -->
+  <g>
+    <text x="90" y="132" font-size="13" font-weight="800" fill="#3182ce" text-anchor="middle" letter-spacing="1.5">COOLER</text>
+    <path d="M 90 150 L 90 620" stroke="#3182ce" stroke-width="2" stroke-dasharray="4,4"/>
+    <polygon points="85,150 95,150 90,140" fill="#3182ce"/>
+  </g>
+
+  <!-- Hotter arrow (left) -->
+  <g>
+    <text x="90" y="640" font-size="13" font-weight="800" fill="#e53e3e" text-anchor="middle" letter-spacing="1.5">HOTTER</text>
+  </g>
+
+  <!-- EFFICACY arrow (right) -->
+  <g>
+    <path d="M 540 620 L 540 140" stroke="#d69e2e" stroke-width="4"/>
+    <polygon points="530,140 550,140 540,115" fill="#d69e2e"/>
+    <text x="570" y="560" font-size="14" font-weight="700" fill="#b45309">Residual fuels</text>
+    <text x="570" y="578" font-size="12" fill="#4a5568">heaviest, densest</text>
+
+    <text x="570" y="420" font-size="14" font-weight="700" fill="#b45309">Distillates</text>
+    <text x="570" y="438" font-size="12" fill="#4a5568">diesel, kerosene</text>
+
+    <text x="570" y="280" font-size="14" font-weight="700" fill="#b45309">Unleaded</text>
+    <text x="570" y="298" font-size="12" fill="#4a5568">gasoline, petrochemicals</text>
+
+    <text x="570" y="160" font-size="14" font-weight="800" fill="#d69e2e" letter-spacing="1">EFFICACY</text>
+    <text x="570" y="180" font-size="14" font-weight="800" fill="#d69e2e" letter-spacing="1">IMPROVES</text>
+    <text x="570" y="200" font-size="14" font-weight="800" fill="#d69e2e" letter-spacing="1">UP THE LADDER</text>
+  </g>
+
+  <!-- Fuel Right badge -->
+  <g transform="translate(60, 480)">
+    <rect x="0" y="0" width="150" height="170" rx="8" fill="#061a33" stroke="#d69e2e" stroke-width="2"/>
+    <text x="75" y="30" font-size="12" font-weight="800" fill="#d69e2e" text-anchor="middle" letter-spacing="2">FUEL RIGHT</text>
+    <text x="75" y="52" font-size="11" fill="#ffffff" text-anchor="middle">treats every</text>
+    <text x="75" y="68" font-size="11" fill="#ffffff" text-anchor="middle">combustion fuel</text>
+    <text x="75" y="84" font-size="11" fill="#ffffff" text-anchor="middle">on this ladder</text>
+    <line x1="20" y1="98" x2="130" y2="98" stroke="#d69e2e" stroke-width="1"/>
+    <text x="75" y="118" font-size="10" fill="#cbd5e0" text-anchor="middle">ULSD &middot; MGO &middot; IFO</text>
+    <text x="75" y="134" font-size="10" fill="#cbd5e0" text-anchor="middle">VLSFO &middot; HFO</text>
+    <text x="75" y="150" font-size="10" fill="#cbd5e0" text-anchor="middle">Unleaded &middot; Bio-blends</text>
+  </g>
+
+  <!-- Source note -->
+  <text x="450" y="700" font-size="10" fill="#718096" text-anchor="middle">Captain Fuel Right &middot; Technology by Fairville Products, Inc. &middot; Run Clean. Run Smart.</text>
+</svg>
