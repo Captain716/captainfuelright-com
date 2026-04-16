@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Captain Fuel Right — Run Clean. Run Smart. Clean combustion. Proven fuel science. Enterprise memory architecture. Think. Remember. Distribute." />
+<meta name="keywords" content="Captain Fuel Right, Fuel Right, FR 30K, FR 15K, ProActive, fuel treatment, diesel additive, ULSD, marine fuel, ISO 4406, sludge removal, clean combustion, enterprise AI, Palantir, Anthropic, Samsara ISV" />
+<meta property="og:title" content="Captain Fuel Right — Run Clean. Run Smart." />
+<meta property="og:description" content="Clean combustion. Proven fuel science. 20+ years of real-world results, delivered with an ambassador at the helm." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.captainfuelright.com" />
+<title>Captain Fuel Right — Run Clean. Run Smart.</title>
+<style>
+  :root {
+    --navy: #0b2545;
+    --deep-navy: #061a33;
+    --gold: #d69e2e;
+    --blue: #3182ce;
+    --palantir-blue: #0052cc;
+    --green: #38a169;
+    --gray-light: #f5f7fa;
+    --gray-mid: #4a5568;
+    --gray-dark: #1a202c;
+    --white: #ffffff;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--gray-dark);
+    line-height: 1.65;
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+  h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); }
+  h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 1rem; }
+  h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+  h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; color: var(--blue); }
+  p { margin-bottom: 1rem; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+  .section-label {
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-size: 0.875rem; color: var(--blue); font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  section { padding: 5rem 0; }
+
+  /* HEADER */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(11, 37, 69, 0.96);
+    backdrop-filter: blur(8px);
+    color: var(--white);
+    padding: 0.9rem 0;
+    border-bottom: 2px solid var(--gold);
+  }
+  header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+  .logo { font-weight: 800; font-size: 1.1rem; color: var(--gold); letter-spacing: 0.03em; }
+  nav a { color: var(--white); margin-left: 1.25rem; font-weight: 500; font-size: 0.9rem; }
+  nav a:hover { color: var(--gold); text-decoration: none; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--deep-navy) 0%, var(--navy) 55%, var(--palantir-blue) 100%);
+    color: var(--white);
+    padding: 6rem 0 5rem;
+    text-align: center;
+  }
+  .hero .kicker {
+    color: var(--gold);
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+  }
+  .hero h1 { margin-bottom: 1rem; }
+  .hero .tagline {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: #e2e8f0;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  .hero .lede {
+    font-size: 1.125rem;
+    max-width: 780px;
+    margin: 0 auto 2rem;
+    color: #cbd5e0;
+  }
+  .cta-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2px solid transparent;
+  }
+  .btn-primary { background: var(--gold); color: var(--deep-navy); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(214,158,46,0.35); text-decoration: none; }
+  .btn-secondary { background: transparent; border-color: var(--white); color: var(--white); }
+  .btn-secondary:hover { background: var(--white); color: var(--deep-navy); text-decoration: none; }
+
+  /* WHO WE ARE */
+  .who { background: var(--gray-light); }
+  .who .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+  .who .two-col p { color: var(--gray-mid); }
+  .who blockquote {
+    border-left: 4px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--deep-navy);
+    background: rgba(214,158,46,0.05);
+  }
+
+  /* WHAT WE DO */
+  .what { background: var(--white); }
+  .what-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .what-card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--gray-light);
+    border-top: 4px solid var(--blue);
+  }
+
+  /* MARKETS */
+  .markets { background: var(--deep-navy); color: var(--white); }
+  .markets .section-label { color: var(--gold); }
+  .markets h2 { color: var(--gold); }
+  .markets p { color: #cbd5e0; }
+  .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .market-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(214,158,46,0.2);
+    padding: 1.75rem;
+    border-radius: 10px;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .market-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+  .market-card h3 { color: var(--gold); margin-bottom: 0.5rem; }
+
+  /* PRODUCTS */
+  .products { background: var(--gray-light); }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .product-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+  .product-card .ratio {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--palantir-blue);
+    background: rgba(0,82,204,0.08);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+  .product-card h3 { color: var(--deep-navy); margin-bottom: 0.5rem; }
+  .product-card p { color: var(--gray-mid); font-size: 0.95rem; }
+
+  /* TECHNICAL / SCIENCE */
+  .technical { background: var(--white); }
+  .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+  .tech-card {
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+  }
+  .tech-card h3 { color: var(--palantir-blue); margin-bottom: 0.75rem; }
+  .tech-stat {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold);
+    line-height: 1;
+    margin: 0.75rem 0;
+    font-feature-settings: "tnum";
+  }
+
+  /* BENEFITS */
+  .benefits { background: var(--gray-light); }
+  .benefit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0.75rem;
+    margin-top: 2rem;
+    list-style: none;
+  }
+  .benefit-list li {
+    padding: 1rem 1.25rem;
+    background: var(--white);
+    border-left: 3px solid var(--green);
+    border-radius: 4px;
+    font-weight: 500;
+    color: var(--gray-dark);
+  }
+  .fuel-compat {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--deep-navy);
+    color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .fuel-compat strong { color: var(--gold); letter-spacing: 0.05em; }
+
+  /* ENTERPRISE ARCHITECTURE */
+  .architecture { background: var(--white); }
+  .layers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .layer {
+    background: var(--gray-light);
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 4px solid;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .layer:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+  .layer-1 { border-top-color: var(--blue); }
+  .layer-2 { border-top-color: var(--palantir-blue); }
+  .layer-3 { border-top-color: var(--green); }
+  .layer-0 { border-top-color: var(--gold); }
+  .layer .badge {
+    display: inline-block;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 4px;
+    background: var(--white); color: var(--gray-mid);
+    margin-bottom: 0.75rem;
+  }
+  .layer p { color: var(--gray-mid); font-size: 0.95rem; }
+
+  /* AMBASSADOR */
+  .ambassador {
+    background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+    color: var(--deep-navy);
+    padding: 3.5rem 0;
+    text-align: center;
+  }
+  .ambassador h2 { margin-bottom: 0.5rem; }
+  .ambassador p { font-size: 1.125rem; max-width: 780px; margin: 0 auto; }
+
+  /* STATS */
+  .stats { background: var(--deep-navy); color: var(--white); }
+  .stats .section-label { color: var(--gold); }
+  .stats h2 { color: var(--white); }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+  .stat {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(214,158,46,0.2);
+    border-radius: 8px;
+  }
+  .stat .number {
+    display: block; font-size: 2.25rem; font-weight: 800;
+    color: var(--gold); line-height: 1;
+    font-feature-settings: "tnum";
+  }
+  .stat .label {
+    display: block; font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 0.1em; color: #cbd5e0; margin-top: 0.5rem;
+  }
+
+  /* TESTIMONIAL */
+  .testimonial { background: var(--white); text-align: center; }
+  .testimonial blockquote {
+    max-width: 820px;
+    margin: 2rem auto 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--deep-navy);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+  .testimonial blockquote::before { content: '\201C'; color: var(--gold); font-size: 3rem; line-height: 0; vertical-align: -0.4em; margin-right: 0.2em; }
+  .testimonial blockquote::after { content: '\201D'; color: var(--gold); font-size: 3rem; line-height: 0; vertical-align: -0.4em; margin-left: 0.2em; }
+  .testimonial .attribution {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-mid);
+    font-style: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* VIDEO */
+  .video-section { background: var(--gray-light); text-align: center; }
+  .video-placeholder {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    aspect-ratio: 16/9;
+    background: var(--deep-navy);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 1.125rem;
+    border: 2px dashed rgba(214,158,46,0.4);
+    padding: 2rem;
+  }
+  .video-placeholder a { color: var(--gold); font-weight: 600; }
+
+  /* CONTACT */
+  .contact { background: var(--white); text-align: center; }
+  .contact h2 { color: var(--deep-navy); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 820px;
+    margin: 2rem auto 0;
+  }
+  .contact-card {
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: var(--gray-light);
+  }
+  .contact-card .label {
+    text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.1em;
+    color: var(--gray-mid); margin-bottom: 0.5rem;
+  }
+  .contact-card .value { font-size: 1.1rem; font-weight: 600; color: var(--deep-navy); word-break: break-word; }
+  .contact-card .value a { color: var(--palantir-blue); }
+  .captain-line {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--deep-navy);
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .captain-line a { color: var(--gold); text-decoration: underline; }
+
+  /* FOOTER */
+  footer {
+    background: var(--deep-navy);
+    color: #a0aec0;
+    padding: 2.5rem 0 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  footer .credit { margin-top: 0.5rem; color: #718096; font-size: 0.8rem; }
+  footer a { color: #cbd5e0; }
+
+  @media (max-width: 720px) {
+    nav a { margin-left: 0.75rem; font-size: 0.8rem; }
+    .hero { padding: 4rem 0 3.5rem; }
+    .who .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+    section { padding: 3.5rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">CAPTAIN FUEL RIGHT</div>
+    <nav>
+      <a href="#who">Who We Are</a>
+      <a href="#what">What We Do</a>
+      <a href="#markets">Markets</a>
+      <a href="#products">Products</a>
+      <a href="#technical">Technology</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="kicker">RUN CLEAN. RUN SMART.</div>
+    <h1>Clean combustion, delivered with an ambassador at the helm.</h1>
+    <p class="tagline">Think. Remember. Distribute.</p>
+    <p class="lede">
+      Captain Fuel Right pairs 20+ years of proven fuel-treatment science with a three-layer enterprise
+      memory architecture — so fleets, generators, and marine operators run cleaner, run smarter,
+      and nothing built today is lost tomorrow.
+    </p>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-primary">Contact the Captain</a>
+      <a href="#products" class="btn btn-secondary">See the Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="who" id="who">
+  <div class="container">
+    <div class="section-label">Who We Are</div>
+    <h2>The Captain's charge: deliver ultra-clean fuel, at the tank and beyond.</h2>
+    <div class="two-col">
+      <div>
+        <p>
+          More than two decades ago, the mystery behind unwanted sludge and microbial contamination
+          in diesel fuel was finally cracked by materials science. That research became
+          <strong>Fuel Right</strong> — a family of additive technologies that dissolve sludge,
+          drive water out, and keep fuel systems running at peak performance.
+        </p>
+        <p>
+          <strong>Captain Fuel Right</strong> carries that proven science into the field. We are the
+          ambassador-level delivery partner for fleets, generators, and marine operators who cannot
+          afford contamination, cannot afford downtime, and cannot afford to guess.
+        </p>
+      </div>
+      <div>
+        <p>
+          Fuel Right technology extends benefits far beyond the tank — through filters, injectors,
+          pumps, and combustion itself. Today there are representatives worldwide delivering
+          ultra-clean fuel technology to the industry.
+        </p>
+        <blockquote>
+          Our mission: develop and deliver innovative fuel-additive technologies that raise fuel
+          quality and cleanliness to a standard exceeding the Worldwide Fuel Charter ISO 4406 18/16/13.
+        </blockquote>
+        <p>
+          The Captain is USCG retired, Battelle-trained, and trusted by federal, state, and commercial
+          operators who know that clean combustion is a mission requirement, not a marketing line.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="what" id="what">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2>Clean fuel. Clean filters. Clean combustion.</h2>
+    <div class="what-grid">
+      <div class="what-card">
+        <h4>In the Tank</h4>
+        <p>
+          Engineered to provide <strong>clean, clear fuel</strong> in the tank — ensuring optimal
+          fuel quality free of sludge, water, and microbial contamination.
+        </p>
+      </div>
+      <div class="what-card">
+        <h4>Through the System</h4>
+        <p>
+          Removes contamination throughout the fuel system for <strong>extended filter life</strong>,
+          unrestricted fuel flow, and protection against corrosion from tank walls to injector tips.
+        </p>
+      </div>
+      <div class="what-card">
+        <h4>At the Injector</h4>
+        <p>
+          Optimizes engine performance with <strong>clean injectors</strong>, improved atomization,
+          reduced exhaust emissions, and lower carbon build-up.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section class="markets" id="markets">
+  <div class="container">
+    <div class="section-label">Markets Served</div>
+    <h2>One science. Every mission.</h2>
+    <div class="market-grid">
+      <div class="market-card">
+        <h3>Commercial Marine</h3>
+        <p>Fleets rely on our products to maintain clean fuel onboard, reduce emissions, improve fuel economy, and cut operating service costs.</p>
+      </div>
+      <div class="market-card">
+        <h3>Stand-By Power &amp; Tank Cleaning</h3>
+        <p>Experienced contractors depend on Captain Fuel Right to ensure ultra-clean fuel for emergency power systems, data centers, and critical backup generation.</p>
+      </div>
+      <div class="market-card">
+        <h3>Premium Fuel Programs</h3>
+        <p>Adopted by C-store and wholesale fuel operators who want to differentiate with a premium fuel-quality brand strategy.</p>
+      </div>
+      <div class="market-card">
+        <h3>Retail &amp; Industrial</h3>
+        <p>A full line of proprietary additives packaged for industrial retail distribution — every drop formulated to the same standard as the commercial programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-label">Featured Products</div>
+    <h2>The Captain's fuel-treatment lineup.</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="ratio">1:30,000</span>
+        <h3>Fuel Right 30K</h3>
+        <p>
+          Our most concentrated formula. Dissolves and removes sludge contamination from fuel systems
+          fast. ASTM D2274 sludge-formation result: <strong>0.5&nbsp;mg/100 mL</strong> — 3&times; better
+          than the industry threshold. Built for operators who treat at the tank.
+        </p>
+      </div>
+      <div class="product-card">
+        <span class="ratio">1:15,000</span>
+        <h3>Fuel Right 15K</h3>
+        <p>
+          The workhorse. Designed to clean fuel to meet or exceed the Worldwide Fuel Charter
+          ISO&nbsp;4406 18/16/13 specification. For routine dosing and delivery-integrated treatment programs.
+        </p>
+      </div>
+      <div class="product-card">
+        <span class="ratio">1:20,000</span>
+        <h3>Fuel Right ProActive</h3>
+        <p>
+          A unique blend of proprietary chemistries intended for middle-distillate fuels (primarily diesel).
+          Preventive, continuous-dose formulation for fleets running high cycle counts.
+        </p>
+      </div>
+      <div class="product-card">
+        <span class="ratio">Winter</span>
+        <h3>Cold Flow &amp; Winter Series</h3>
+        <p>
+          Winter 2K / 2.8K / 4K / Cold Flow / Thaw / Winter MAX. Built for low-temperature fuel integrity
+          where failure is not an option — in cold storage, on the water, and in backup power.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL -->
+<section class="technical" id="technical">
+  <div class="container">
+    <div class="section-label">The Science</div>
+    <h2>Measurable. Auditable. Repeatable.</h2>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>ISO 4406 18/16/13</h3>
+        <span class="tech-stat">8&times; Cleaner</span>
+        <p>
+          Standard allows up to 2,500 particles/mL and 200&nbsp;ppm water. Captain Fuel Right programs have
+          delivered fuel <strong>8&times; cleaner</strong> than the ISO 4406 standard in the field —
+          reducing particulate counts from 2,500 to as low as 320 particles/mL and water content as
+          low as 95&nbsp;ppm. Some programs have achieved better than ISO 4406 13/10/8.
+        </p>
+      </div>
+      <div class="tech-card">
+        <h3>ASTM D2274 Sludge Formation</h3>
+        <span class="tech-stat">0.5&nbsp;mg / 100&nbsp;mL</span>
+        <p>
+          FR&nbsp;30K third-party ASTM D2274 accelerated-aging result: <strong>0.5&nbsp;mg/100 mL</strong> —
+          roughly three times better than the industry threshold. Independent evidence that the
+          treatment does what the bottle says.
+        </p>
+      </div>
+      <div class="tech-card">
+        <h3>Mechanism of Action</h3>
+        <p>
+          Dissolves suspended sludge and drives water to the bottom of the tank for removal.
+          Scrubs away degraded-fuel deposits and sludge adhered to tank walls. Deposits a microscopic
+          corrosion coating that protects the entire fuel system. Results in clean injectors,
+          improved lubricity, enhanced atomization, better fuel economy, and reduced emissions.
+        </p>
+      </div>
+      <div class="tech-card">
+        <h3>Fuel Compatibility</h3>
+        <p>
+          Effective across <strong>ULSD, unleaded gasoline, MGO, IFO, VLSFO, heavy fuel oil, and
+          bio-fuel blends</strong>. Efficacy actually <em>improves</em> up the fuel ladder — from
+          residual to distillate to unleaded — so nothing in your fleet is outside the scope of
+          the program.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="container">
+    <div class="section-label">Benefits</div>
+    <h2>Nine reasons fleets standardize on Captain Fuel Right.</h2>
+    <ul class="benefit-list">
+      <li>Clean tanks, fuel strainers, fuel lines, and filters</li>
+      <li>Protect fuel system from corrosion</li>
+      <li>Eliminate strainer and filter plugging</li>
+      <li>Improve fuel lubricity</li>
+      <li>Extend fuel pump and injector life</li>
+      <li>Improve lubricating oil life</li>
+      <li>Optimize fuel economy</li>
+      <li>Reduce emissions and carbon build-up</li>
+      <li>Proven across ULSD, MGO, IFO, VLSFO, unleaded, and bio-fuel blends</li>
+    </ul>
+    <div class="fuel-compat">
+      Approved by and used on <strong>VDOT</strong> and <strong>MDE</strong> fleet programs.
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE ARCHITECTURE -->
+<section class="architecture" id="architecture">
+  <div class="container">
+    <div class="section-label">Enterprise Architecture</div>
+    <h2>Three layers. One ambassador.</h2>
+    <p style="max-width: 820px; color: var(--gray-mid);">
+      Most organizations treat intelligence, memory, and distribution as separate problems.
+      Captain Fuel Right connects them into one persistent, auditable, multi-generational system —
+      so fuel-program data, lab results, and field decisions never get lost.
+    </p>
+    <div class="layers">
+      <div class="layer layer-1">
+        <span class="badge">Layer 1</span>
+        <h3>THINK</h3>
+        <p><strong>Anthropic.</strong> AI officers generate the intelligence — drafts, analysis, decisions — under zero-defect operational standards.</p>
+      </div>
+      <div class="layer layer-2">
+        <span class="badge">Layer 2</span>
+        <h3>REMEMBER</h3>
+        <p><strong>Palantir.</strong> Officer Sentinel + Foundry Ontology. Every work product becomes a permanent, queryable object. Institutional memory that outlives sessions.</p>
+      </div>
+      <div class="layer layer-3">
+        <span class="badge">Layer 3</span>
+        <h3>DISTRIBUTE</h3>
+        <p><strong>WorldCast.</strong> Patented multicast and ABT zero-packet-loss distribution. The pathway from decision to downrange, without degradation.</p>
+      </div>
+      <div class="layer layer-0">
+        <span class="badge">Ambassador</span>
+        <h3>THE CAPTAIN</h3>
+        <p>Battelle-trained senior market manager. USCG retired. Connects Think, Remember, and Distribute into one operating system — and carries clean-combustion fuel science into every mission.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMBASSADOR -->
+<section class="ambassador">
+  <div class="container">
+    <h2>Navigate by the chart, not by the horizon.</h2>
+    <p>Multi-generational knowledge management. Building systems for the ages, not for now.</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="section-label">By the Numbers</div>
+    <h2>Scale without sprawl.</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="number">90%</span><span class="label">Reduction in Tank Cleaning</span></div>
+      <div class="stat"><span class="number">8&times;</span><span class="label">Cleaner than ISO 4406</span></div>
+      <div class="stat"><span class="number">0.5 mg</span><span class="label">ASTM D2274 (FR 30K)</span></div>
+      <div class="stat"><span class="number">20+</span><span class="label">Years of Field Data</span></div>
+      <div class="stat"><span class="number">34K+</span><span class="label">Memory Objects (Sentinel)</span></div>
+      <div class="stat"><span class="number">24/7</span><span class="label">Cloud Health Monitoring</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <div class="section-label">From the Field</div>
+    <h2>It pays to fuel right.</h2>
+    <blockquote>
+      Customers who have adopted this ultra-clean fuel program have seen dramatic improvement
+      in filter life and up to a 90% reduction in tank cleaning.
+    </blockquote>
+    <span class="attribution">— Reported across Captain Fuel Right field programs</span>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section" id="video">
+  <div class="container">
+    <div class="section-label">Watch &amp; Learn</div>
+    <h2>The Captain's YouTube channel.</h2>
+    <p style="max-width: 720px; margin: 0 auto; color: var(--gray-mid);">
+      Field demonstrations, lessons from the water, and the science behind clean combustion —
+      plainspoken, from the helm.
+    </p>
+    <div class="video-placeholder">
+      <div>
+        Embed coming soon &mdash; watch at
+        <a href="https://www.youtube.com/@captainfuelright" target="_blank" rel="noopener">@captainfuelright on YouTube</a>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label">Get in Touch</div>
+    <h2>Contact the Captain.</h2>
+    <p style="max-width: 720px; margin: 0 auto; color: var(--gray-mid);">
+      Every message reaches an answering service first, then the Captain. No bots. No dead ends.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:info@captainfuelright.com">info@captainfuelright.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="label">Answering Service</div>
+        <div class="value">24/7 live operator relay</div>
+      </div>
+      <div class="contact-card">
+        <div class="label">YouTube</div>
+        <div class="value"><a href="https://www.youtube.com/@captainfuelright" target="_blank" rel="noopener">@captainfuelright</a></div>
+      </div>
+    </div>
+
+    <div class="captain-line">
+      <a href="mailto:info@captainfuelright.com">CONTACT THE CAPTAIN &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>&copy; 2026 Captain Fuel Right. All rights reserved.</div>
+    <div class="credit">
+      Run clean. Run smart. &middot; Think &middot; Remember &middot; Distribute &middot;
+      <a href="mailto:info@captainfuelright.com">info@captainfuelright.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
